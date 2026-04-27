@@ -382,6 +382,7 @@ function CountUp({
 /* ── Page ──────────────────────────────────────────────────────────────── */
 
 export default function Home() {
+  const [navScrolled, setNavScrolled] = useState(false);
 
   /* ── Scroll-reveal: pure inline-style approach ── */
   useEffect(() => {
@@ -417,8 +418,11 @@ export default function Home() {
   /* ── Nav background on scroll ── */
   useEffect(() => {
     const nav = document.getElementById("site-nav");
-    const onScroll = () =>
-      nav?.classList.toggle("scrolled", window.scrollY > 50);
+    const onScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      nav?.classList.toggle("scrolled", isScrolled);
+      setNavScrolled(isScrolled);
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -430,23 +434,35 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-bold italic"
+            className="text-xl font-bold italic transition-colors duration-300"
             style={{ color: "#0095f6" }}
           >
             innerr
           </Link>
 
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#666]">
-            <a href="#how-it-works" className="hover:text-[#111] transition-colors duration-200">
-              How it Works
-            </a>
-            <a href="#for-hosts" className="hover:text-[#111] transition-colors duration-200">
-              For Hosts
-            </a>
-            <Link href="/buy-tokens" className="hover:text-[#111] transition-colors duration-200">
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+            {["#how-it-works", "#for-hosts"].map((href, i) => (
+              <a
+                key={href}
+                href={href}
+                className="transition-colors duration-300 hover:opacity-70"
+                style={{ color: navScrolled ? "#444" : "rgba(255,255,255,0.88)" }}
+              >
+                {["How it Works", "For Hosts"][i]}
+              </a>
+            ))}
+            <Link
+              href="/buy-tokens"
+              className="transition-colors duration-300 hover:opacity-70"
+              style={{ color: navScrolled ? "#444" : "rgba(255,255,255,0.88)" }}
+            >
               Get Tokens
             </Link>
-            <Link href="/help" className="hover:text-[#111] transition-colors duration-200">
+            <Link
+              href="/help"
+              className="transition-colors duration-300 hover:opacity-70"
+              style={{ color: navScrolled ? "#444" : "rgba(255,255,255,0.88)" }}
+            >
               Help
             </Link>
           </div>
@@ -454,14 +470,17 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <a
               href="#download"
-              className="hidden sm:inline-flex px-5 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-200 hover:scale-[1.04]"
-              style={{ borderColor: "#0095f6", color: "#0095f6" }}
+              className="hidden sm:inline-flex px-5 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-300 hover:scale-[1.04]"
+              style={{
+                borderColor: navScrolled ? "#0095f6" : "rgba(255,255,255,0.70)",
+                color: navScrolled ? "#0095f6" : "#fff",
+              }}
             >
               Download App
             </a>
             <a
               href="#for-hosts"
-              className="inline-flex px-5 py-2 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:scale-[1.04]"
+              className="inline-flex px-5 py-2 rounded-full text-sm font-semibold text-white transition-all duration-300 hover:scale-[1.04]"
               style={{ backgroundColor: "#0095f6", boxShadow: "0 2px 16px rgba(0,149,246,0.3)" }}
             >
               Start Earning
