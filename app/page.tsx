@@ -331,6 +331,54 @@ function PhoneMockup() {
   );
 }
 
+/* ── Count-up stat ─────────────────────────────────────────────────────── */
+
+function CountUp({
+  target,
+  suffix = "",
+  duration = 2000,
+}: {
+  target: number;
+  suffix?: string;
+  duration?: number;
+}) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const triggered = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !triggered.current) {
+          triggered.current = true;
+          const startTime = performance.now();
+          const tick = (now: number) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.round(eased * target));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return (
+    <span ref={ref}>
+      {count.toLocaleString()}
+      {suffix}
+    </span>
+  );
+}
+
 /* ── Page ──────────────────────────────────────────────────────────────── */
 
 export default function Home() {
@@ -370,7 +418,7 @@ export default function Home() {
   useEffect(() => {
     const nav = document.getElementById("site-nav");
     const onScroll = () =>
-      nav?.classList.toggle("scrolled", window.scrollY > 24);
+      nav?.classList.toggle("scrolled", window.scrollY > 50);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -424,21 +472,14 @@ export default function Home() {
 
       <main>
         {/* ── HERO ── */}
-        <section className="relative min-h-screen flex flex-col items-center justify-center py-24 px-6 overflow-hidden">
-          {/* Background photo */}
-          <Image
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80"
-            alt="Friends sharing a moment together"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="100vw"
-          />
-          {/* Dark overlay */}
-          <div
-            className="absolute inset-0"
-            style={{ backgroundColor: "rgba(0,0,0,0.52)" }}
-          />
+        <section
+          className="relative min-h-screen flex flex-col items-center justify-center py-24 px-6 overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, #0095f6, #0066cc, #6366f1, #0066cc, #0095f6)",
+            backgroundSize: "300% 300%",
+            animation: "hero-gradient 8s ease infinite",
+          }}
+        >
 
           {/* Two-column layout */}
           <div className="relative w-full max-w-6xl mx-auto">
@@ -530,6 +571,31 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* ── STATS STRIP ── */}
+        <div style={{ backgroundColor: "#0a0a1a" }}>
+          <div className="max-w-4xl mx-auto px-6 py-14">
+            <div className="grid grid-cols-3 gap-6 text-center">
+              {[
+                { target: 10000, suffix: "+", label: "fans connected" },
+                { target: 98,    suffix: "%", label: "satisfaction rate" },
+                { target: 6,     suffix: "hr", label: "avg. reply time" },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div
+                    className="font-extrabold text-white"
+                    style={{ fontSize: "clamp(28px, 5vw, 44px)", letterSpacing: "-0.02em" }}
+                  >
+                    <CountUp target={s.target} suffix={s.suffix} />
+                  </div>
+                  <div className="text-sm mt-1" style={{ color: "rgba(255,255,255,0.40)" }}>
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* ── FOR FANS — STAT + PHONE MOCKUP ── */}
         <section className="py-36 sm:py-48 bg-white overflow-hidden">
@@ -843,6 +909,52 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── MARQUEE STRIP ── */}
+        <div
+          style={{
+            backgroundColor: "#0a0a1a",
+            overflow: "hidden",
+            padding: "18px 0",
+            borderTop: "1px solid rgba(255,255,255,0.06)",
+            borderBottom: "1px solid rgba(255,255,255,0.06)",
+          }}
+        >
+          <div style={{ display: "flex" }}>
+            {[0, 1].map((copy) => (
+              <div key={copy} className="marquee-track">
+                {[
+                  { emoji: "😭", text: "Just got a reply from my favourite creator" },
+                  { emoji: "⚡", text: "They actually replied within an hour!" },
+                  { emoji: "🙌", text: "Best app ever, worth every token" },
+                  { emoji: "💙", text: "I cried when they replied honestly" },
+                  { emoji: "🔥", text: "My idol gave me actual life advice" },
+                  { emoji: "✨", text: "Never thought this was possible" },
+                  { emoji: "💫", text: "Screenshot worthy moment" },
+                  { emoji: "🎉", text: "Best $10 I ever spent" },
+                ].map((item, j) => (
+                  <span
+                    key={j}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      whiteSpace: "nowrap",
+                      padding: "0 24px",
+                      fontSize: "13px",
+                      fontWeight: "500",
+                      color: "#fff",
+                    }}
+                  >
+                    <span>{item.emoji}</span>
+                    <span>{item.text}</span>
+                    <span style={{ color: "#0095f6", fontSize: "5px", marginLeft: "8px" }}>●</span>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* ── FOR HOSTS ── */}
         <section
           id="for-hosts"
@@ -1103,6 +1215,29 @@ export default function Home() {
                   >
                     Buy Now
                   </Link>
+
+                  {/* Shimmer streak — popular card only */}
+                  {pkg.popular && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        borderRadius: "16px",
+                        overflow: "hidden",
+                        pointerEvents: "none",
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                          background:
+                            "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%)",
+                          animation: "shimmer-slide 3s ease-in-out 1.5s infinite",
+                        }}
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
