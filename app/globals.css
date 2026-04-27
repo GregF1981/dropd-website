@@ -89,6 +89,25 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* ── Hero floating blobs ────────────────────────────────────────────────── */
+
+@keyframes blob-drift-1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%       { transform: translate(28px, -22px) scale(1.06); }
+  66%       { transform: translate(-18px, 16px) scale(0.94); }
+}
+
+@keyframes blob-drift-2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%       { transform: translate(-24px, 18px) scale(1.08); }
+  66%       { transform: translate(22px, -26px) scale(0.93); }
+}
+
+@keyframes blob-drift-3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50%       { transform: translate(14px, 28px) scale(1.10); }
+}
+
 /* ── Marquee scrolling strip ───────────────────────────────────────────── */
 
 @keyframes marquee {

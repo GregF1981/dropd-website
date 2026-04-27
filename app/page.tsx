@@ -494,11 +494,44 @@ export default function Home() {
         <section
           className="relative min-h-screen flex flex-col items-center justify-center py-24 px-6 overflow-hidden"
           style={{
-            background: "linear-gradient(135deg, #0095f6, #0066cc, #6366f1, #0066cc, #0095f6)",
-            backgroundSize: "300% 300%",
-            animation: "hero-gradient 8s ease infinite",
+            background: 'linear-gradient(135deg, #0047AB, #0095f6, #7C3AED, #0095f6, #0047AB)',
+            backgroundSize: '300% 300%',
+            animation: 'hero-gradient 8s ease infinite',
           }}
         >
+          {/* Subtle dark overlay for text readability */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{ backgroundColor: "rgba(0,0,0,0.18)" }}
+          />
+
+          {/* Floating blobs */}
+          {[
+            { w: 380, h: 380, top: "-8%",  left: "-6%",  color: "rgba(255,255,255,0.09)", anim: "blob-drift-1", dur: "20s", delay: "0s"  },
+            { w: 220, h: 220, top: "8%",   right: "4%",  color: "rgba(147,197,253,0.11)", anim: "blob-drift-2", dur: "17s", delay: "2s"  },
+            { w: 140, h: 140, top: "52%",  left: "6%",   color: "rgba(255,255,255,0.08)", anim: "blob-drift-3", dur: "15s", delay: "4s"  },
+            { w: 310, h: 310, bottom: "4%", right: "-4%", color: "rgba(147,197,253,0.10)", anim: "blob-drift-1", dur: "23s", delay: "1s"  },
+            { w: 180, h: 180, bottom: "14%",left: "14%",  color: "rgba(255,255,255,0.09)", anim: "blob-drift-2", dur: "18s", delay: "6s"  },
+            { w: 110, h: 110, top: "38%",  right: "18%", color: "rgba(255,255,255,0.08)", anim: "blob-drift-3", dur: "25s", delay: "3s"  },
+            { w: 260, h: 260, top: "22%",  left: "28%",  color: "rgba(147,197,253,0.09)", anim: "blob-drift-1", dur: "19s", delay: "8s"  },
+          ].map((b, i) => (
+            <div
+              key={i}
+              className="absolute pointer-events-none"
+              style={{
+                width: b.w,
+                height: b.h,
+                top: b.top,
+                left: (b as { left?: string }).left,
+                right: (b as { right?: string }).right,
+                bottom: (b as { bottom?: string }).bottom,
+                borderRadius: "50%",
+                backgroundColor: b.color,
+                filter: "blur(56px)",
+                animation: `${b.anim} ${b.dur} ease-in-out ${b.delay} infinite`,
+              }}
+            />
+          ))}
 
           {/* Two-column layout */}
           <div className="relative w-full max-w-6xl mx-auto">
