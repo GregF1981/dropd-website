@@ -7,7 +7,7 @@ const articles: Article[] = [
     q: "What are tokens?",
     a: (
       <>
-        <p>Tokens are innerr&apos;s in-app virtual currency. You use them to send messages to hosts. Simple as that — no hidden fees, no subscriptions, no surprises.</p>
+        <p>Tokens are dropd&apos;s in-app virtual currency. You use them to send messages to hosts. Simple as that — no hidden fees, no subscriptions, no surprises.</p>
         <p>Buy a pack, spend tokens on the messages that matter to you. Every token you spend goes directly toward a message to a real host who will personally reply (or your tokens come back).</p>
       </>
     ),
@@ -19,7 +19,7 @@ const articles: Article[] = [
         <p>You can buy tokens in two ways:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>In the app: tap the <strong>Wallet</strong> icon and select a token pack</li>
-          <li>On the website: visit <strong>innerr.com/buy-tokens</strong></li>
+          <li>On the website: visit <strong>dropd.com/buy-tokens</strong></li>
         </ul>
         <p className="mt-2">Choose your pack, enter your card details (processed securely by Stripe), and your tokens appear in your balance immediately. The whole process takes about 30 seconds.</p>
       </>
@@ -56,7 +56,7 @@ const articles: Article[] = [
     q: "Do tokens expire?",
     a: (
       <>
-        <p><strong>No — tokens never expire.</strong> They&apos;re safe until you use them. Your token balance stays intact whether you use innerr every day or come back after months away.</p>
+        <p><strong>No — tokens never expire.</strong> They&apos;re safe until you use them. Your token balance stays intact whether you use dropd every day or come back after months away.</p>
         <p>The only exception: if you delete your account, any remaining tokens are forfeited. So make sure to spend them first!</p>
       </>
     ),
@@ -67,7 +67,7 @@ const articles: Article[] = [
       <>
         <p>Token purchases are generally non-refundable, with one important exception: the <strong>72-hour auto-refund</strong>.</p>
         <p>If you send a message and the host doesn&apos;t reply within 72 hours, those specific tokens are automatically refunded to your balance — no action needed from you.</p>
-        <p>For other refund requests (e.g. a technical error on a purchase), open the innerr app and tap Help &amp; Support from the menu. Nothing in our terms limits your rights under Australian Consumer Law.</p>
+        <p>For other refund requests (e.g. a technical error on a purchase), open the dropd app and tap Help &amp; Support from the menu. Nothing in our terms limits your rights under Australian Consumer Law.</p>
       </>
     ),
   },
@@ -75,14 +75,14 @@ const articles: Article[] = [
     q: "What is the 72-hour refund guarantee?",
     a: (
       <>
-        <p>Every message you send is covered by innerr&apos;s 72-hour guarantee. Here&apos;s exactly how it works:</p>
+        <p>Every message you send is covered by dropd&apos;s 72-hour guarantee. Here&apos;s exactly how it works:</p>
         <ol className="list-decimal pl-5 space-y-2 mt-2">
           <li>You send a message to a host — tokens are deducted from your balance.</li>
           <li>A 72-hour timer starts from the moment the message is delivered.</li>
           <li>If the host replies within 72 hours, the transaction completes and they keep the tokens.</li>
           <li>If the host doesn&apos;t reply in time, the system <strong>automatically refunds your tokens</strong> — no forms, no waiting, no chasing.</li>
         </ol>
-        <p className="mt-3">You&apos;ll receive a notification the moment a refund lands in your balance. It&apos;s one of innerr&apos;s core promises.</p>
+        <p className="mt-3">You&apos;ll receive a notification the moment a refund lands in your balance. It&apos;s one of dropd&apos;s core promises.</p>
       </>
     ),
   },
@@ -104,7 +104,7 @@ const articles: Article[] = [
     q: "Is my payment secure?",
     a: (
       <>
-        <p>Yes, completely. All payments on innerr are processed by <strong>Stripe</strong> — one of the world&apos;s most trusted and secure payment platforms, used by millions of businesses globally.</p>
+        <p>Yes, completely. All payments on dropd are processed by <strong>Stripe</strong> — one of the world&apos;s most trusted and secure payment platforms, used by millions of businesses globally.</p>
         <p>We <strong>never store your card number, expiry date, or CVV</strong> on our servers. Your payment details go directly to Stripe using industry-standard encryption. Stripe is PCI DSS Level 1 certified — the highest level of payment security.</p>
       </>
     ),
@@ -127,7 +127,7 @@ const articles: Article[] = [
     a: (
       <>
         <p>Any unused tokens in your account are <strong>forfeited when you delete your account</strong>. Tokens cannot be refunded or transferred before deletion.</p>
-        <p>If you have a significant token balance and are thinking about deleting your account, we recommend spending your tokens first or reaching out via Help &amp; Support in the innerr app before proceeding — we may be able to assist.</p>
+        <p>If you have a significant token balance and are thinking about deleting your account, we recommend spending your tokens first or reaching out via Help &amp; Support in the dropd app before proceeding — we may be able to assist.</p>
       </>
     ),
   },

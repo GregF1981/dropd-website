@@ -22,7 +22,7 @@ const articles: Article[] = [
     q: "How do I set my token price?",
     a: (
       <>
-        <p>In your host dashboard, go to <strong>Settings &gt; Pricing</strong>. You can set your token price per message within the range innerr allows.</p>
+        <p>In your host dashboard, go to <strong>Settings &gt; Pricing</strong>. You can set your token price per message within the range dropd allows.</p>
         <p>A few tips:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>Start with a lower price while you build your reply rate and reviews.</li>
@@ -70,7 +70,7 @@ const articles: Article[] = [
     q: "What is the 20% platform fee?",
     a: (
       <>
-        <p>When a fan pays tokens to message you, innerr deducts a <strong>20% platform fee</strong> and credits the remaining <strong>80%</strong> to your host balance.</p>
+        <p>When a fan pays tokens to message you, dropd deducts a <strong>20% platform fee</strong> and credits the remaining <strong>80%</strong> to your host balance.</p>
         <p>For example: if a fan pays 10 tokens, you receive 8 tokens. This fee covers the cost of running the platform, processing payments, fraud prevention, the 72-hour refund guarantee system, and customer support.</p>
         <p>The fee is automatically applied — you don&apos;t need to calculate or manage anything. Your dashboard always shows your net earnings after the fee.</p>
       </>
@@ -94,7 +94,7 @@ const articles: Article[] = [
     q: "How do I apply for official verification?",
     a: (
       <>
-        <p>Once you&apos;ve established a presence on innerr, go to your host profile and tap <strong>Apply for Verification</strong> (or find it in Settings &gt; Verification).</p>
+        <p>Once you&apos;ve established a presence on dropd, go to your host profile and tap <strong>Apply for Verification</strong> (or find it in Settings &gt; Verification).</p>
         <p>You&apos;ll need to submit supporting information about your identity and public profile. Our team reviews each application individually. We&apos;ll get back to you with a decision — this typically takes a few days.</p>
       </>
     ),
@@ -106,7 +106,7 @@ const articles: Article[] = [
         <p>Verification is for hosts who are genuinely notable in their field. While we review each case individually, verified hosts typically:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>Have a real public presence (social media following, media coverage, or recognised profile)</li>
-          <li>Have completed identity verification on innerr</li>
+          <li>Have completed identity verification on dropd</li>
           <li>Maintain a strong reply rate</li>
           <li>Represent themselves accurately on their profile</li>
         </ul>
@@ -160,7 +160,7 @@ export default function HostsHelp() {
     <CategoryPage
       emoji="⭐"
       title="For Hosts"
-      subtitle="Earning money, cashing out, and getting the most from innerr."
+      subtitle="Earning money, cashing out, and getting the most from dropd."
       category="For Hosts"
       articles={articles}
       related={related}

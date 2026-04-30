@@ -7,7 +7,7 @@ const articles: Article[] = [
     q: "How do I block a user?",
     a: (
       <>
-        <p>To block someone on innerr, go to their profile and tap the <strong>three-dot menu</strong> (⋯) in the top right corner, then select <strong>Block</strong>.</p>
+        <p>To block someone on dropd, go to their profile and tap the <strong>three-dot menu</strong> (⋯) in the top right corner, then select <strong>Block</strong>.</p>
         <p>Once blocked:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>They can no longer message you or view your profile</li>
@@ -34,15 +34,15 @@ const articles: Article[] = [
           <li>Other</li>
         </ul>
         <p className="mt-2">Add any additional context if you can — it helps our team act faster. Reports are always confidential. You can also block the person at the same time.</p>
-        <p className="mt-2">For urgent safety concerns, email <a href="mailto:safety@innerr.com" style={{ color: "#0095f6" }}>safety@innerr.com</a> directly.</p>
+        <p className="mt-2">For urgent safety concerns, email <a href="mailto:safety@dropd.com" style={{ color: "#0095f6" }}>safety@dropd.com</a> directly.</p>
       </>
     ),
   },
   {
-    q: "What content is not allowed on innerr?",
+    q: "What content is not allowed on dropd?",
     a: (
       <>
-        <p>innerr has a zero-tolerance policy on content that causes harm. The following is strictly prohibited:</p>
+        <p>dropd has a zero-tolerance policy on content that causes harm. The following is strictly prohibited:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>Sexual content involving minors (CSAM) — reported to authorities immediately</li>
           <li>Threats, violence, or incitement to harm</li>
@@ -57,10 +57,10 @@ const articles: Article[] = [
     ),
   },
   {
-    q: "How does innerr moderate content?",
+    q: "How does dropd moderate content?",
     a: (
       <>
-        <p>innerr uses a combination of automated detection and human review:</p>
+        <p>dropd uses a combination of automated detection and human review:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li><strong>Automated filters</strong> — scan messages and posts for known harmful content patterns in real time</li>
           <li><strong>Profanity filter</strong> — flags messages containing extreme language before delivery</li>
@@ -90,13 +90,13 @@ const articles: Article[] = [
     q: "How do I protect my privacy?",
     a: (
       <>
-        <p>Here are the key privacy controls available to you on innerr:</p>
+        <p>Here are the key privacy controls available to you on dropd:</p>
         <ul className="list-disc pl-5 space-y-2 mt-2">
           <li><strong>Profile visibility</strong> — in Settings &gt; Privacy, you can control whether your profile is publicly searchable</li>
-          <li><strong>Message history</strong> — only you and the host can see a conversation; innerr staff only access messages if required for a safety investigation</li>
+          <li><strong>Message history</strong> — only you and the host can see a conversation; dropd staff only access messages if required for a safety investigation</li>
           <li><strong>Blocking</strong> — block any user to prevent all contact and profile views</li>
           <li><strong>Notifications</strong> — control exactly what alerts you receive in Settings &gt; Notifications</li>
-          <li><strong>Data requests</strong> — email <a href="mailto:privacy@innerr.com" style={{ color: "#0095f6" }}>privacy@innerr.com</a> to request a copy of your data or request deletion</li>
+          <li><strong>Data requests</strong> — email <a href="mailto:privacy@dropd.com" style={{ color: "#0095f6" }}>privacy@dropd.com</a> to request a copy of your data or request deletion</li>
         </ul>
         <p className="mt-2">Read our full <a href="/privacy" style={{ color: "#0095f6" }}>Privacy Policy</a> for details on how we handle your data.</p>
       </>
@@ -114,15 +114,15 @@ const articles: Article[] = [
           <li>If you&apos;re a host, any pending earnings must be cashed out first</li>
           <li>Deletion is <strong>permanent and irreversible</strong> — your username and profile cannot be recovered</li>
         </ul>
-        <p className="mt-2">If you have a significant token balance or are a host with earnings, we recommend reaching out via Help &amp; Support in the innerr app before deleting — we may be able to help.</p>
+        <p className="mt-2">If you have a significant token balance or are a host with earnings, we recommend reaching out via Help &amp; Support in the dropd app before deleting — we may be able to help.</p>
       </>
     ),
   },
   {
-    q: "What data does innerr store about me?",
+    q: "What data does dropd store about me?",
     a: (
       <>
-        <p>innerr collects and stores the following types of data:</p>
+        <p>dropd collects and stores the following types of data:</p>
         <ul className="list-disc pl-5 space-y-2 mt-2">
           <li><strong>Account info</strong> — name, email address, profile details, and identity verification data</li>
           <li><strong>Messages</strong> — content of messages sent and received (stored encrypted)</li>
@@ -130,7 +130,7 @@ const articles: Article[] = [
           <li><strong>Device and usage data</strong> — device type, IP address, app usage patterns for security and improvement</li>
           <li><strong>Payment info</strong> — we do <em>not</em> store card details; Stripe handles all payment data</li>
         </ul>
-        <p className="mt-2">You can request a full copy of your data by emailing <a href="mailto:privacy@innerr.com" style={{ color: "#0095f6" }}>privacy@innerr.com</a>. See our <a href="/privacy" style={{ color: "#0095f6" }}>Privacy Policy</a> for full details.</p>
+        <p className="mt-2">You can request a full copy of your data by emailing <a href="mailto:privacy@dropd.com" style={{ color: "#0095f6" }}>privacy@dropd.com</a>. See our <a href="/privacy" style={{ color: "#0095f6" }}>Privacy Policy</a> for full details.</p>
       </>
     ),
   },
@@ -142,14 +142,14 @@ const articles: Article[] = [
         <ul className="list-disc pl-5 space-y-2 mt-3">
           <li>
             <strong>Safety email:</strong>{" "}
-            <a href="mailto:safety@innerr.com" style={{ color: "#0095f6" }}>safety@innerr.com</a>
+            <a href="mailto:safety@dropd.com" style={{ color: "#0095f6" }}>safety@dropd.com</a>
             {" "}— monitored 7 days a week, urgent cases prioritised
           </li>
           <li>
-            <strong>General support:</strong> open the innerr app and tap Help &amp; Support from the menu
+            <strong>General support:</strong> open the dropd app and tap Help &amp; Support from the menu
           </li>
         </ul>
-        <p className="mt-3">If you or someone else is in immediate danger, <strong>contact emergency services (000 in Australia) first</strong>. innerr is not a crisis service.</p>
+        <p className="mt-3">If you or someone else is in immediate danger, <strong>contact emergency services (000 in Australia) first</strong>. dropd is not a crisis service.</p>
         <p className="mt-2">We work with Australian law enforcement and will cooperate fully with any lawful request involving a genuine safety matter.</p>
       </>
     ),

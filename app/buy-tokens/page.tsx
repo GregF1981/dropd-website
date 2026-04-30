@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Get Tokens — innerr",
-  description: "Buy tokens to message your favourite creators on innerr.",
+  title: "Get Tokens — dropd",
+  description: "Buy tokens to message your favourite creators on dropd.",
 };
 
 const BRAND = (
   <span className="font-bold italic" style={{ color: "#0095f6" }}>
-    innerr
+    dropd
   </span>
 );
 
@@ -54,11 +54,11 @@ const faqs = [
   },
   {
     q: "What if the host doesn't reply?",
-    a: "Every host on innerr is held to a 72-hour reply guarantee. If they don't reply within 72 hours, your tokens are automatically refunded to your account in full.",
+    a: "Every host on dropd is held to a 72-hour reply guarantee. If they don't reply within 72 hours, your tokens are automatically refunded to your account in full.",
   },
   {
     q: "Can I get a refund on tokens I haven't used?",
-    a: "If you have unused tokens and would like a refund, open the innerr app and tap Help & Support from the menu within 30 days of purchase. We'll review on a case-by-case basis in line with our refund policy.",
+    a: "If you have unused tokens and would like a refund, open the dropd app and tap Help & Support from the menu within 30 days of purchase. We'll review on a case-by-case basis in line with our refund policy.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function BuyTokens() {
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold italic" style={{ color: "#0095f6" }}>
-            innerr
+            dropd
           </Link>
           <nav className="flex items-center gap-6 text-sm font-medium text-gray-500">
             <Link href="/#how-it-works" className="hover:text-gray-900 transition-colors hidden sm:inline">How it Works</Link>
@@ -188,7 +188,7 @@ export default function BuyTokens() {
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    {item.desc.replace("${BRAND}", "innerr")}
+                    {item.desc.replace("${BRAND}", "dropd")}
                   </p>
                 </div>
               ))}
@@ -225,7 +225,7 @@ export default function BuyTokens() {
       <footer className="bg-gray-900 text-gray-400 py-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link href="/" className="text-xl font-bold italic" style={{ color: "#0095f6" }}>
-            innerr
+            dropd
           </Link>
           <nav className="flex flex-wrap justify-center gap-6 text-sm">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
@@ -233,7 +233,7 @@ export default function BuyTokens() {
             <Link href="/help" className="hover:text-white transition-colors">Help</Link>
             <Link href="/for-hosts" className="hover:text-white transition-colors">For Hosts</Link>
           </nav>
-          <div className="text-sm text-gray-500">© {new Date().getFullYear()} innerr</div>
+          <div className="text-sm text-gray-500">© {new Date().getFullYear()} dropd</div>
         </div>
       </footer>
     </>

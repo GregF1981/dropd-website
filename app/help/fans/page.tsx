@@ -26,7 +26,7 @@ const articles: Article[] = [
     q: "How do tokens work?",
     a: (
       <>
-        <p>Tokens are innerr&apos;s in-app currency. You buy a token pack, and then spend tokens to message hosts. Think of them like credits — simple, transparent, no hidden fees.</p>
+        <p>Tokens are dropd&apos;s in-app currency. You buy a token pack, and then spend tokens to message hosts. Think of them like credits — simple, transparent, no hidden fees.</p>
         <p>Each host sets their own token price, which is always shown on their profile before you spend anything. <strong>Tokens never expire</strong> and stay safe in your balance until you&apos;re ready to use them.</p>
         <p>Head to <strong>Tokens &amp; Payments</strong> in Help if you&apos;d like more detail on buying tokens and packages.</p>
       </>
@@ -38,7 +38,7 @@ const articles: Article[] = [
       <>
         <p>We cover you completely. If a host doesn&apos;t reply within <strong>72 hours of your message being delivered</strong>, the tokens you spent are automatically refunded to your balance.</p>
         <p>You don&apos;t need to report it, contact support, or fill out any forms. The refund just happens — you&apos;ll get a notification when the tokens land back in your account.</p>
-        <p>It&apos;s one of innerr&apos;s core promises: a reply, or your tokens back.</p>
+        <p>It&apos;s one of dropd&apos;s core promises: a reply, or your tokens back.</p>
       </>
     ),
   },
@@ -47,7 +47,7 @@ const articles: Article[] = [
     a: (
       <>
         <p>The most common refund is the <strong>72-hour auto-refund</strong> — if a host doesn&apos;t reply in time, the tokens return to your balance automatically. No action needed.</p>
-        <p>For anything else — like an issue with a token purchase — open the innerr app and tap Help &amp; Support from the menu.</p>
+        <p>For anything else — like an issue with a token purchase — open the dropd app and tap Help &amp; Support from the menu.</p>
       </>
     ),
   },
@@ -55,7 +55,7 @@ const articles: Article[] = [
     q: "Can I send images in messages?",
     a: (
       <>
-        <p>Currently, fan messages on innerr are <strong>text only</strong>. We&apos;re actively working on image support — it&apos;s one of our most requested features.</p>
+        <p>Currently, fan messages on dropd are <strong>text only</strong>. We&apos;re actively working on image support — it&apos;s one of our most requested features.</p>
         <p>Keep an eye on our in-app updates for when this launches. In the meantime, you can still link to things or describe what you want to share in your message.</p>
       </>
     ),
@@ -115,7 +115,7 @@ export default function FansHelp() {
     <CategoryPage
       emoji="💬"
       title="Sending Messages"
-      subtitle="How to connect with your favourite hosts on innerr."
+      subtitle="How to connect with your favourite hosts on dropd."
       category="Sending Messages"
       articles={articles}
       related={related}

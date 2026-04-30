@@ -6,10 +6,10 @@ import Link from "next/link";
 
 /* ── Brand helpers ─────────────────────────────────────────────────────── */
 
-function Innerr() {
+function Dropd() {
   return (
     <span className="font-bold italic" style={{ color: "#0095f6" }}>
-      innerr
+      dropd
     </span>
   );
 }
@@ -437,7 +437,7 @@ export default function Home() {
             className="text-xl font-bold italic transition-colors duration-300"
             style={{ color: "#0095f6" }}
           >
-            innerr
+            dropd
           </Link>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -709,7 +709,7 @@ export default function Home() {
                         justifyContent: "space-between",
                       }}
                     >
-                      <span style={{ fontSize: "10px", color: "#aaa" }}>innerr</span>
+                      <span style={{ fontSize: "10px", color: "#aaa" }}>dropd</span>
                       <span style={{ fontSize: "10px", color: "#aaa" }}>9:41</span>
                     </div>
 
@@ -849,7 +849,7 @@ export default function Home() {
                 {
                   n: "01",
                   title: "Find your host.",
-                  body: "Browse creators, influencers and celebrities who have joined innerr.",
+                  body: "Browse creators, influencers and celebrities who have joined dropd.",
                 },
                 {
                   n: "02",
@@ -913,7 +913,7 @@ export default function Home() {
                 },
                 {
                   quote:
-                    "Asked for advice on my music career and got three paragraphs back. innerr is genuinely different.",
+                    "Asked for advice on my music career and got three paragraphs back. dropd is genuinely different.",
                   name: "Darius K.",
                   handle: "@dariusk",
                   avatar:
@@ -1308,7 +1308,7 @@ export default function Home() {
               className="font-bold text-[#111] mb-4"
               style={{ fontSize: "clamp(40px, 7vw, 72px)" }}
             >
-              Get <Innerr />.
+              Get <Dropd />.
             </h2>
             <p className="text-lg text-[#888] mb-14">Available on iOS and Android.</p>
 
@@ -1369,7 +1369,7 @@ export default function Home() {
             className="text-xl font-bold italic"
             style={{ color: "#0095f6" }}
           >
-            innerr
+            dropd
           </Link>
           <nav className="flex flex-wrap justify-center gap-8 text-sm font-medium text-[#555]">
             <Link href="/privacy" className="hover:text-white transition-colors duration-200">Privacy</Link>
@@ -1377,7 +1377,7 @@ export default function Home() {
             <Link href="/help"    className="hover:text-white transition-colors duration-200">Help</Link>
             <Link href="/for-hosts" className="hover:text-white transition-colors duration-200">For Hosts</Link>
           </nav>
-          <p className="text-[#444] text-sm text-center">© 2026 innerr. All rights reserved.<br className="sm:hidden" /> <span className="hidden sm:inline">·</span> Melbourne, Australia</p>
+          <p className="text-[#444] text-sm text-center">© 2026 dropd. All rights reserved.<br className="sm:hidden" /> <span className="hidden sm:inline">·</span> Melbourne, Australia</p>
         </div>
       </footer>
     </>

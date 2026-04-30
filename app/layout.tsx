@@ -9,11 +9,11 @@ const font = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "innerr — Message the stars you follow",
+  title: "dropd — Message the stars you follow",
   description:
     "Pay tokens to message your favourite creators and actually get a real reply. Hosts earn money by replying to fans.",
   openGraph: {
-    title: "innerr — Message the stars you follow",
+    title: "dropd — Message the stars you follow",
     description:
       "Pay tokens to message your favourite creators and actually get a real reply.",
     type: "website",

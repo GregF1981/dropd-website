@@ -7,7 +7,7 @@ const articles: Article[] = [
     q: "The 72-hour reply guarantee — explained",
     a: (
       <>
-        <p>The 72-hour reply guarantee is innerr&apos;s core promise to fans. Here&apos;s exactly how it works:</p>
+        <p>The 72-hour reply guarantee is dropd&apos;s core promise to fans. Here&apos;s exactly how it works:</p>
         <ol className="list-decimal pl-5 space-y-2 mt-2">
           <li>You send a message to a host — tokens are immediately deducted from your balance.</li>
           <li>A 72-hour countdown begins the moment your message is delivered to the host.</li>
@@ -29,7 +29,7 @@ const articles: Article[] = [
           <li>You receive a notification confirming the refund</li>
           <li>No forms, no support tickets, no waiting</li>
         </ul>
-        <p className="mt-3">This happens even if you&apos;re not using the app. The next time you open innerr, your balance will reflect the refund. Refund history is visible in <strong>Wallet &gt; Transactions</strong>.</p>
+        <p className="mt-3">This happens even if you&apos;re not using the app. The next time you open dropd, your balance will reflect the refund. Refund history is visible in <strong>Wallet &gt; Transactions</strong>.</p>
       </>
     ),
   },
@@ -48,10 +48,10 @@ const articles: Article[] = [
     q: "What does the blue verification tick mean?",
     a: (
       <>
-        <p>The blue tick (✓) next to a host&apos;s name means they are <strong>officially verified by innerr</strong>. It confirms that:</p>
+        <p>The blue tick (✓) next to a host&apos;s name means they are <strong>officially verified by dropd</strong>. It confirms that:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>The account belongs to the real person it claims to be</li>
-          <li>innerr has reviewed their identity and public presence</li>
+          <li>dropd has reviewed their identity and public presence</li>
           <li>They are a genuine public figure, creator, or notable individual</li>
         </ul>
         <p className="mt-2">Verification is <strong>not for sale</strong> and cannot be earned simply by having a large following. It&apos;s about authenticity — making sure you&apos;re talking to the real person.</p>
@@ -93,7 +93,7 @@ const articles: Article[] = [
     q: "What does the green online dot mean?",
     a: (
       <>
-        <p>The green dot on a host&apos;s profile or avatar means they are <strong>currently active on innerr</strong>. This is a real-time signal that updates automatically — if they&apos;re using the app, the dot is green.</p>
+        <p>The green dot on a host&apos;s profile or avatar means they are <strong>currently active on dropd</strong>. This is a real-time signal that updates automatically — if they&apos;re using the app, the dot is green.</p>
         <p className="mt-2">A green dot is a great time to send a message, as they&apos;re likely to see it quickly. However, the 72-hour guarantee applies regardless of whether the host is online or not — so you&apos;re always protected.</p>
         <p className="mt-2">Hosts can turn off their online visibility in <strong>Settings &gt; Privacy &gt; Show online status</strong> if they prefer.</p>
       </>
@@ -118,7 +118,7 @@ const articles: Article[] = [
     q: "How do I manage my notifications?",
     a: (
       <>
-        <p>Go to <strong>Settings &gt; Notifications</strong> to control exactly what you hear from innerr. You can toggle:</p>
+        <p>Go to <strong>Settings &gt; Notifications</strong> to control exactly what you hear from dropd. You can toggle:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
           <li>New message replies from hosts</li>
           <li>Token refunds</li>
@@ -136,7 +136,7 @@ const articles: Article[] = [
     q: "How does the profanity filter work?",
     a: (
       <>
-        <p>innerr uses an automatic profanity filter that scans messages before they are delivered. If a message contains extreme or harmful language, it is <strong>flagged before delivery</strong> and the sender is warned.</p>
+        <p>dropd uses an automatic profanity filter that scans messages before they are delivered. If a message contains extreme or harmful language, it is <strong>flagged before delivery</strong> and the sender is warned.</p>
         <p className="mt-2">The filter is designed to catch genuinely harmful content — it is <em>not</em> a general censorship tool and won&apos;t flag normal conversation or mild language.</p>
         <p className="mt-2">If your message is flagged:</p>
         <ul className="list-disc pl-5 space-y-1 mt-2">
@@ -185,7 +185,7 @@ export default function FeaturesHelp() {
     <CategoryPage
       emoji="✨"
       title="Features Guide"
-      subtitle="Everything innerr can do — explained simply."
+      subtitle="Everything dropd can do — explained simply."
       category="Features Guide"
       articles={articles}
       related={related}

@@ -10,7 +10,7 @@ export function HelpNav() {
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold italic" style={{ color: "#0095f6" }}>
-          innerr
+          dropd
         </Link>
         <div className="flex items-center gap-6 text-sm font-medium text-gray-500">
           <Link href="/help" className="hover:text-gray-900 transition-colors">
@@ -29,7 +29,7 @@ export function HelpFooter() {
     <footer className="bg-gray-900 text-gray-400 py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <Link href="/" className="text-xl font-bold italic" style={{ color: "#0095f6" }}>
-          innerr
+          dropd
         </Link>
         <nav className="flex flex-wrap justify-center gap-6 text-sm">
           <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
@@ -38,7 +38,7 @@ export function HelpFooter() {
           <Link href="/for-hosts" className="hover:text-white transition-colors">For Hosts</Link>
         </nav>
         <div className="text-sm text-gray-500 text-center">
-          © 2026 innerr. All rights reserved. · Melbourne, Australia
+          © 2026 dropd. All rights reserved. · Melbourne, Australia
         </div>
       </div>
     </footer>
@@ -209,7 +209,7 @@ export function CategoryPage({
           >
             <h2 className="text-xl font-bold text-gray-900 mb-2">Can&apos;t find your answer?</h2>
             <p className="text-gray-500 text-sm max-w-sm mx-auto">
-              To get help, open the innerr app and tap Help &amp; Support from the menu.
+              To get help, open the dropd app and tap Help &amp; Support from the menu.
             </p>
           </div>
 

@@ -38,12 +38,12 @@ const ALL_ARTICLES = [
   { title: "How do I send a broadcast message?",                href: "/help/hosts",    cat: "For Hosts" },
   { title: "How do I block a user?",                            href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "How do I report a user?",                           href: "/help/safety",   cat: "Safety & Privacy" },
-  { title: "What content is not allowed on innerr?",            href: "/help/safety",   cat: "Safety & Privacy" },
-  { title: "How does innerr moderate content?",                 href: "/help/safety",   cat: "Safety & Privacy" },
+  { title: "What content is not allowed on dropd?",            href: "/help/safety",   cat: "Safety & Privacy" },
+  { title: "How does dropd moderate content?",                 href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "What happens when I report someone?",               href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "How do I protect my privacy?",                      href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "How do I delete my account?",                       href: "/help/safety",   cat: "Safety & Privacy" },
-  { title: "What data does innerr store about me?",             href: "/help/safety",   cat: "Safety & Privacy" },
+  { title: "What data does dropd store about me?",             href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "How do I contact support for urgent safety issues?",href: "/help/safety",   cat: "Safety & Privacy" },
   { title: "The 72-hour reply guarantee — explained",           href: "/help/features", cat: "Features Guide" },
   { title: "How do automatic token refunds work?",              href: "/help/features", cat: "Features Guide" },
@@ -72,7 +72,7 @@ const CATEGORIES = [
   { emoji: "⭐", title: "For Hosts",           desc: "Earning money, cashing out, verification",         href: "/help/hosts"    },
   { emoji: "🛡️", title: "Safety & Privacy",   desc: "Blocking, reporting, staying safe",                href: "/help/safety"   },
   { emoji: "⚙️", title: "Account & Settings", desc: "Profile, notifications, deleting your account",    href: "/help/safety"   },
-  { emoji: "✨", title: "Features Guide",      desc: "Everything innerr can do",                         href: "/help/features" },
+  { emoji: "✨", title: "Features Guide",      desc: "Everything dropd can do",                         href: "/help/features" },
 ];
 
 export default function HelpCentre() {
@@ -119,7 +119,7 @@ export default function HelpCentre() {
               <div className="mt-2 bg-white rounded-2xl border border-gray-100 shadow-md text-left overflow-hidden">
                 {filtered.length === 0 ? (
                   <div className="px-5 py-4 text-sm text-gray-500">
-                    No results for &ldquo;{query}&rdquo; — open the innerr app and tap Help &amp; Support from the menu.
+                    No results for &ldquo;{query}&rdquo; — open the dropd app and tap Help &amp; Support from the menu.
                   </div>
                 ) : (
                   filtered.slice(0, 8).map((a, i) => (
@@ -198,7 +198,7 @@ export default function HelpCentre() {
             <div className="text-4xl mb-3">💌</div>
             <h2 className="text-xl font-bold text-gray-900 mb-2">Still need help?</h2>
             <p className="text-gray-500 text-sm max-w-sm mx-auto">
-              To get help, open the innerr app and tap Help &amp; Support from the menu. Our team typically responds within a few hours.
+              To get help, open the dropd app and tap Help &amp; Support from the menu. Our team typically responds within a few hours.
             </p>
           </div>
         </section>

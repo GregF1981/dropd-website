@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — innerr",
-  description: "innerr Privacy Policy — how we collect, use and protect your data.",
+  title: "Privacy Policy — dropd",
+  description: "dropd Privacy Policy — how we collect, use and protect your data.",
 };
 
 export default function Privacy() {
@@ -12,7 +12,7 @@ export default function Privacy() {
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold italic" style={{ color: "#0095f6" }}>
-            innerr
+            dropd
           </Link>
           <nav className="flex items-center gap-6 text-sm font-medium text-gray-500">
             <Link href="/help" className="hover:text-gray-900 transition-colors">Help</Link>
@@ -34,10 +34,10 @@ export default function Privacy() {
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 sm:p-10 prose prose-gray max-w-none">
 
               <p className="text-gray-600 leading-relaxed">
-                <span className="font-bold italic" style={{ color: "#0095f6" }}>innerr</span> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share and protect information about you when you use the innerr platform — including our mobile application and website (collectively, the &ldquo;Service&rdquo;).
+                <span className="font-bold italic" style={{ color: "#0095f6" }}>dropd</span> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share and protect information about you when you use the dropd platform — including our mobile application and website (collectively, the &ldquo;Service&rdquo;).
               </p>
               <p className="text-gray-600 leading-relaxed">
-                By using innerr you agree to the practices described in this policy. If you do not agree, please stop using the Service.
+                By using dropd you agree to the practices described in this policy. If you do not agree, please stop using the Service.
               </p>
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>1. Information We Collect</h2>
@@ -58,7 +58,7 @@ export default function Privacy() {
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>2. How We Use Your Information</h2>
               <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
-                <li>To operate and provide the innerr Service, including processing messages and managing accounts.</li>
+                <li>To operate and provide the dropd Service, including processing messages and managing accounts.</li>
                 <li>To process token purchases and host payouts via Stripe.</li>
                 <li>To enforce our 72-hour reply guarantee and issue automatic refunds where required.</li>
                 <li>To personalise your experience and improve our platform.</li>
@@ -72,12 +72,12 @@ export default function Privacy() {
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>3. Database and Infrastructure — Supabase</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                innerr uses <strong>Supabase</strong> as our backend database and authentication provider. Supabase stores your account data, profile information, and message records in encrypted, secure cloud infrastructure. Supabase operates in compliance with industry security standards. Your data is stored on servers located in data centres within the European Economic Area or United States depending on your region. We have a Data Processing Agreement with Supabase. For more information see <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#0095f6" }}>supabase.com/privacy</a>.
+                dropd uses <strong>Supabase</strong> as our backend database and authentication provider. Supabase stores your account data, profile information, and message records in encrypted, secure cloud infrastructure. Supabase operates in compliance with industry security standards. Your data is stored on servers located in data centres within the European Economic Area or United States depending on your region. We have a Data Processing Agreement with Supabase. For more information see <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#0095f6" }}>supabase.com/privacy</a>.
               </p>
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>4. Payments — Stripe</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                All payment processing is handled by <strong>Stripe, Inc.</strong> innerr does not store your credit card number, expiry date, or CVV on our servers. When you purchase tokens or receive a payout, your payment details are sent directly and securely to Stripe. Stripe is PCI DSS Level 1 certified. By using our payment features you also agree to <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#0095f6" }}>Stripe&apos;s Privacy Policy</a>. We may receive and store a Stripe customer ID and payment method summary (e.g. last four digits of your card) for billing reference purposes.
+                All payment processing is handled by <strong>Stripe, Inc.</strong> dropd does not store your credit card number, expiry date, or CVV on our servers. When you purchase tokens or receive a payout, your payment details are sent directly and securely to Stripe. Stripe is PCI DSS Level 1 certified. By using our payment features you also agree to <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#0095f6" }}>Stripe&apos;s Privacy Policy</a>. We may receive and store a Stripe customer ID and payment method summary (e.g. last four digits of your card) for billing reference purposes.
               </p>
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>5. User Content and Messages</h2>
@@ -110,7 +110,7 @@ export default function Privacy() {
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>8. Your Rights</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Depending on your location, you may have rights including: access to your personal data, correction of inaccurate data, deletion of your account and data, objection to or restriction of processing, and data portability. To exercise any of these rights, open the innerr app and tap Help &amp; Support from the menu. We will respond within 30 days.
+                Depending on your location, you may have rights including: access to your personal data, correction of inaccurate data, deletion of your account and data, objection to or restriction of processing, and data portability. To exercise any of these rights, open the dropd app and tap Help &amp; Support from the menu. We will respond within 30 days.
               </p>
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>9. Data Retention</h2>
@@ -120,7 +120,7 @@ export default function Privacy() {
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>10. Children&apos;s Privacy</h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                innerr is not directed at children under the age of 17. We do not knowingly collect personal data from anyone under 17. If you believe we have inadvertently collected information from a minor, please contact us immediately via Help &amp; Support in the innerr app.
+                dropd is not directed at children under the age of 17. We do not knowingly collect personal data from anyone under 17. If you believe we have inadvertently collected information from a minor, please contact us immediately via Help &amp; Support in the dropd app.
               </p>
 
               <h2 className="text-xl font-bold mt-8 mb-3" style={{ color: "#0095f6" }}>11. Security</h2>
@@ -143,8 +143,8 @@ export default function Privacy() {
                 If you have any questions about this Privacy Policy or how we handle your data, please contact us:
               </p>
               <div className="bg-gray-50 rounded-xl p-4 mt-3 text-sm text-gray-600">
-                <div className="font-semibold text-gray-900 mb-1">innerr Support</div>
-                <div>Open the innerr app and tap Help &amp; Support from the menu.</div>
+                <div className="font-semibold text-gray-900 mb-1">dropd Support</div>
+                <div>Open the dropd app and tap Help &amp; Support from the menu.</div>
                 <div className="mt-1 text-gray-400">Melbourne, Victoria, Australia</div>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function Privacy() {
       <footer className="bg-gray-900 text-gray-400 py-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link href="/" className="text-xl font-bold italic" style={{ color: "#0095f6" }}>
-            innerr
+            dropd
           </Link>
           <nav className="flex flex-wrap justify-center gap-6 text-sm">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
@@ -163,7 +163,7 @@ export default function Privacy() {
             <Link href="/help" className="hover:text-white transition-colors">Help</Link>
             <Link href="/for-hosts" className="hover:text-white transition-colors">For Hosts</Link>
           </nav>
-          <div className="text-sm text-gray-500 text-center">© 2026 innerr. All rights reserved. · Melbourne, Australia</div>
+          <div className="text-sm text-gray-500 text-center">© 2026 dropd. All rights reserved. · Melbourne, Australia</div>
         </div>
       </footer>
     </>
