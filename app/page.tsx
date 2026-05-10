@@ -419,9 +419,7 @@ export default function Home() {
   useEffect(() => {
     const onScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      const isScrolled = scrollTop > 50;
-      console.log('scrolled:', isScrolled, 'scrollTop:', scrollTop);
-      setNavScrolled(isScrolled);
+      setNavScrolled(scrollTop > 50);
     };
     onScroll();
     document.addEventListener("scroll", onScroll, { passive: true });
@@ -1330,7 +1328,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               {/* Apple App Store badge */}
               <a
-                href="#"
+                href="#download"
                 className="transition-all duration-200 hover:scale-[1.04] hover:-translate-y-1"
                 aria-label="Download on the App Store"
               >
@@ -1351,7 +1349,7 @@ export default function Home() {
 
               {/* Google Play badge */}
               <a
-                href="#"
+                href="#download"
                 className="transition-all duration-200 hover:scale-[1.04] hover:-translate-y-1"
                 aria-label="Get it on Google Play"
               >

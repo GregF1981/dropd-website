@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { HelpNav, HelpFooter } from "./_shared";
 
+
 const ALL_ARTICLES = [
   { title: "How do I find a host to message?",                  href: "/help/fans",     cat: "Sending Messages" },
   { title: "How do I send my first message?",                   href: "/help/fans",     cat: "Sending Messages" },
@@ -71,7 +72,7 @@ const CATEGORIES = [
   { emoji: "🪙", title: "Tokens & Payments",  desc: "Buying tokens, refunds, pricing",                  href: "/help/tokens"   },
   { emoji: "⭐", title: "For Hosts",           desc: "Earning money, cashing out, verification",         href: "/help/hosts"    },
   { emoji: "🛡️", title: "Safety & Privacy",   desc: "Blocking, reporting, staying safe",                href: "/help/safety"   },
-  { emoji: "⚙️", title: "Account & Settings", desc: "Profile, notifications, deleting your account",    href: "/help/safety"   },
+  { emoji: "⚙️", title: "Account & Settings", desc: "Profile, notifications, deleting your account",    href: "/help/features"  },
   { emoji: "✨", title: "Features Guide",      desc: "Everything dropd can do",                         href: "/help/features" },
 ];
 

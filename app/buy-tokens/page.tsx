@@ -140,8 +140,8 @@ export default function BuyTokens() {
                         </li>
                       ))}
                     </ul>
-                    <a
-                      href="#"
+                    <Link
+                      href="/#download"
                       className="block w-full text-center py-3 rounded-xl text-sm font-bold transition-opacity hover:opacity-90"
                       style={
                         pkg.popular
@@ -149,14 +149,14 @@ export default function BuyTokens() {
                           : { backgroundColor: "#e8f4fe", color: "#0095f6" }
                       }
                     >
-                      Buy Now
-                    </a>
+                      Get the App
+                    </Link>
                   </div>
                 </div>
               ))}
             </div>
             <p className="text-center text-sm text-gray-400 mt-6">
-              Payments processed securely via Stripe. No subscription. Cancel any time.
+              Purchase tokens in the dropd app — available on iOS and Android. Payments processed securely via Stripe.
             </p>
           </div>
         </section>
@@ -171,7 +171,7 @@ export default function BuyTokens() {
                 {
                   icon: "🪙",
                   title: "Tokens are your currency",
-                  desc: `Each host on ${BRAND} sets their own token price — typically between 5 and 50 tokens per message. You spend tokens to send your message.`,
+                  desc: "Each host on dropd sets their own token price — typically between 5 and 50 tokens per message. You spend tokens to send your message.",
                 },
                 {
                   icon: "✉️",
@@ -187,9 +187,7 @@ export default function BuyTokens() {
                 <div key={item.title} className="text-center">
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">
-                    {item.desc.replace("${BRAND}", "dropd")}
-                  </p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>

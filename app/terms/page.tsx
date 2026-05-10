@@ -124,7 +124,7 @@ export default function Terms() {
 
               <H2 id="about" n="1">About dropd</H2>
               <P>
-                dropd is a fan-to-creator paid messaging platform operated by [Company Name] ABN [XX XXX XXX XXX], a company incorporated in Victoria, Australia (&ldquo;dropd&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). Our platform allows fans to pay tokens to send messages to creators and hosts, who earn tokens by replying.
+                dropd is a fan-to-creator paid messaging platform operated by Dropd Pty Ltd, a company incorporated in Victoria, Australia (&ldquo;dropd&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). Our platform allows fans to pay tokens to send messages to creators and hosts, who earn tokens by replying.
               </P>
 
               <H2 id="acceptance" n="2">Acceptance of Terms</H2>
